@@ -36,6 +36,7 @@ describe('render', () => {
             expect(submitButton.exists()).toBe(false);
         });
     });
+    
     describe('success is false', () => {
         let wrapper;
         beforeEach(() => {
