@@ -23,7 +23,6 @@ describe('render', () => {
             wrapper = setup(true);
         });
         test('Input renders without error', () => {
-            const wrapper = setup();
             const inputComponent = findByTestAttr(wrapper, 'component-input');
             expect(inputComponent.length).toBe(1);
         });
@@ -36,7 +35,7 @@ describe('render', () => {
             expect(submitButton.exists()).toBe(false);
         });
     });
-    
+
     describe('success is false', () => {
         let wrapper;
         beforeEach(() => {
